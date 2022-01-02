@@ -182,7 +182,7 @@ strong {
   height: 100%;
   z-index: 99999;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   background: none repeat scroll 0 0 var(--white-color);
