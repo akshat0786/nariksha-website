@@ -16,7 +16,8 @@ https://www.tooplate.com/view/2127-little-fashion
   --section-bg-color:           #f0f8ff;
   --dark-color:                 #000000;
   --grey-color:                 #d0d1d1;
-  --p-color:                    #707072;
+  --p-color:                    #6e6a6a;
+  --c-color:                    #ffffff;
 
   --body-font-family:           'Inter', sans-serif;
 
@@ -106,6 +107,12 @@ h6 {
   font-size: 20px;
 }
 
+table td{
+  color: var(--c-color);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-light);
+}
+
 p {
   color: var(--p-color);
   font-size: var(--p-font-size);
@@ -116,10 +123,15 @@ a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
+  position:relative;
 }
 
 a {
   color: var(--p-color);
+  text-decoration: none;
+}
+a.narik{
+  color: var(--white-color);
   text-decoration: none;
 }
 
@@ -322,7 +334,12 @@ strong {
     bottom: -200px;
   }
 }
-
+#narik{
+  color: #f0f8ff;
+}
+#narik:hover{
+  color:green;
+}
 /*---------------------------------------
   NAVIGATION               
 -----------------------------------------*/
@@ -456,9 +473,9 @@ strong {
 
 .navbar-toggler .navbar-toggler-icon::before,
 .navbar-toggler .navbar-toggler-icon::after {
-  transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
-  transition: top 300ms 350ms ease, transform 300ms 50ms ease;
-  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+  transition: top 300ms 355ms ease, -webkit-transform 300ms 50ms ease;
+  transition: top 300ms 355ms ease, transform 300ms 50ms ease;
+  transition: top 300ms 355ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
   position: absolute;
   right: 0;
   left: 0;
