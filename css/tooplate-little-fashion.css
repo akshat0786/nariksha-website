@@ -112,6 +112,12 @@ table td{
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-light);
 }
+p.text-muted{
+  color: rgb(7, 6, 6);
+  font-size: 15px;
+  font-weight: 50px;
+
+}
 
 p {
   color: var(--p-color);
@@ -123,7 +129,6 @@ a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
-  position:relative;
 }
 
 a {
@@ -182,6 +187,7 @@ b,
 strong {
   font-weight: var(--font-weight-bold);
 }
+
 
 /*---------------------------------------
   PRE LOADER               
