@@ -557,7 +557,7 @@ strong {
 .slick-bottom {
   background: linear-gradient(to top, var(--dark-color), transparent 90%);
   position: absolute;
-  z-index: 2;
+  z-index: 0;
   bottom: 0;
   right: 0;
   left: 0;
@@ -921,7 +921,7 @@ button:focus:not(:focus-visible) {
 }
 
 .product-thumb:hover .product-image {
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(18, 102, 25, 0.411);
 }
 
 .product-top {
