@@ -111,17 +111,17 @@
                     <div class="col-lg-6 col-12">
                         <h2 class="mb-4">Let's <span>begin</span></h2>
 
-                        <form class="contact-form me-lg-5 pe-lg-3" onsubmit="sendmail(); reset(); return false;">
+                        <form class="contact-form me-lg-5 pe-lg-3" action="https://formspree.io/f/xoqrdqjg" method="POST">
 
                             <div class="form-floating">
-                                <input type="text" id="name" class="form-control" placeholder="Full name">
+                                <input type="text" name="name" class="form-control" placeholder="Full name">
 
                                 <label for="name">Full name</label>
 
                             </div>
 
                             <div class="form-floating my-4">
-                                <input type="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control"
+                                <input type="email" name="email" pattern="[^ @]*@[^ @]*" class="form-control"
                                     placeholder="Email address">
 
                                 <label for="email">Email address</label>
@@ -129,14 +129,14 @@
                             </div>
 
                             <div class="form-floating my-4">
-                                <input type="subject" id="subject" class="form-control" placeholder="Subject">
+                                <input type="subject" name="subject" class="form-control" placeholder="Subject">
 
                                 <label for="subject">Subject!</label>
 
                             </div>
 
                             <div class="form-floating mb-4">
-                                <textarea id="message" class="form-control"
+                                <textarea name="message" class="form-control"
                                     placeholder="Leave a comment here"></textarea>
 
                                 <label for="message">Say something</label>
@@ -148,28 +148,29 @@
                             </div>
                         </form>
                     </div>
-                    <script src="https://smtpjs.com/v3/smtp.js"></script>
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+                    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 
-                    <script>
+                    <!-- <script>
 
                         function sendmail() {
                             Email.send({
                                 Host: "smtp.gmail.com",
-                                Username: "gargakshat066@gmail.com",
-                                Password: "Burjkhalifa678@",
+                                Username: "startupnariksha@gmail.com",
+                                Password: "Nariksha@squad453",
                                 To: 'akshat79990@gmail.com',
                                 From: document.getElementById("email").value,
                                 Subject: "Nariksa form enquiry ",
-                                Body: "Name: "+document.getElementById("name").value
-                                    + "<br> Email: "+document.getElementById("email").value
-                                    + "<br> Phone no: "+document.getElementById("phone").value
-                                    + "<br> Message: "+document.getElementById("message").value
+                                // Body: "Name: " + document.getElementById("name").value
+                                //     + "<br> Email: " + document.getElementById("email").value
+                                //     + "<br> Phone no: " + document.getElementById("phone").value
+                                //     + "<br> Message: " + document.getElementById("message").value
+                                body: "This is the body"
                             }).then(
                                 message => alert("Email sent successfully")
                             );
                         }
-                    </script>
+                    </script> -->
 
                     <div class="col-lg-6 col-12 mt-5 ms-auto">
                         <div class="row">
